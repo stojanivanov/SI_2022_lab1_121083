@@ -1,0 +1,424 @@
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master)
+$ git log
+commit 78787a85b81987c8f64c3d6b4690df3a737f9e03 (HEAD -> master, origin/master, origin/HEAD)
+Author: stojanivanov <63551840+stojanivanov@users.noreply.github.com>
+Date:   Sun Apr 10 20:48:23 2022 +0200
+
+    Initial commit
+
+commit 6109d10d5982f053f7c334c3b5ff5a436265d113
+Author: stojanivanov <63551840+stojanivanov@users.noreply.github.com>
+Date:   Sun Apr 10 20:47:45 2022 +0200
+
+    Initial commit
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master)
+$ nano shopping_list.txt
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master)
+$ git add shopping_list.txt
+warning: LF will be replaced by CRLF in shopping_list.txt.
+The file will have its original line endings in your working directory
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master)
+$ git commit -m "Add 5 items to the shopping list"
+[master d5ba6a7] Add 5 items to the shopping list
+ 1 file changed, 5 insertions(+)
+ create mode 100644 shopping_list.txt
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master)
+$ nano shopping_list.txt
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master)
+$ git add shopping_list.txt
+warning: LF will be replaced by CRLF in shopping_list.txt.
+The file will have its original line endings in your working directory
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master)
+$ git commit -m "Add quantities to the items"
+[master 7a0a829] Add quantities to the items
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 646 bytes | 323.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/stojanivanov/SI_2022_lab1_121083.git
+   78787a8..7a0a829  master -> master
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master)
+$ git branch branch1
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master)
+$ git branch branch2
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master)
+$ git branch
+  branch1
+  branch2
+* master
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master)
+$ git push origin branch1
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'branch1' on GitHub by visiting:
+remote:      https://github.com/stojanivanov/SI_2022_lab1_121083/pull/new/branch1
+remote:
+To https://github.com/stojanivanov/SI_2022_lab1_121083.git
+ * [new branch]      branch1 -> branch1
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master)
+$ git push origin branch2
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'branch2' on GitHub by visiting:
+remote:      https://github.com/stojanivanov/SI_2022_lab1_121083/pull/new/branch2
+remote:
+To https://github.com/stojanivanov/SI_2022_lab1_121083.git
+ * [new branch]      branch2 -> branch2
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master)
+$ git checkout branch1
+Switched to branch 'branch1'
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (branch1)
+$ nano shopping_list.txt
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (branch1)
+$ git add shopping_list.txt
+warning: LF will be replaced by CRLF in shopping_list.txt.
+The file will have its original line endings in your working directory
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (branch1)
+$ git commit -m "Change quantity of item #5"
+[branch1 265ba70] Change quantity of item #5
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (branch1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master)
+$ nano shopping_list.txt
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master)
+$ git add shopping_list.txt
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master)
+$ git commit -m "Change quantity of item #2"
+[master a64d34b] Change quantity of item #2
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master)
+$ git checkout branch2
+Switched to branch 'branch2'
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (branch2)
+$ nano shopping_list.txt
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (branch2)
+$ git add shopping_list.txt
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (branch2)
+$ nano shopping_list.txt
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (branch2)
+$ git add shopping_list.txt
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (branch2)
+$ git commit -m "Modify item #4"
+[branch2 7ed983f] Modify item #4
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (branch2)
+$ nano shopping_list.txt
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (branch2)
+$ git add shopping_list.txt
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (branch2)
+$ git commit -m "Modify item #4 and adnn item #6"
+[branch2 7c9bf6c] Modify item #4 and adnn item #6
+ 1 file changed, 1 insertion(+)
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (branch2)
+$ git push
+fatal: The current branch branch2 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin branch2
+
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (branch2)
+$ git push origin branch2
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 652 bytes | 326.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/stojanivanov/SI_2022_lab1_121083.git
+   7a0a829..7c9bf6c  branch2 -> branch2
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (branch2)
+$ git checkout branch1
+Switched to branch 'branch1'
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (branch1)
+$ git push origin branch1
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 345 bytes | 345.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/stojanivanov/SI_2022_lab1_121083.git
+   7a0a829..265ba70  branch1 -> branch1
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (branch1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 345 bytes | 345.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/stojanivanov/SI_2022_lab1_121083.git
+   7a0a829..a64d34b  master -> master
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master)
+$ git merge branch1
+Auto-merging shopping_list.txt
+Merge made by the 'ort' strategy.
+ shopping_list.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master)
+$ git merge branch2
+Auto-merging shopping_list.txt
+CONFLICT (content): Merge conflict in shopping_list.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master|MERGING)
+$ git merge branch2
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master|MERGING)
+$ git checkout branch2
+error: you need to resolve your current index first
+shopping_list.txt: needs merge
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master|MERGING)
+$ git merge --abord
+error: unknown option `abord'
+usage: git merge [<options>] [<commit>...]
+   or: git merge --abort
+   or: git merge --continue
+
+    -n                    do not show a diffstat at the end of the merge
+    --stat                show a diffstat at the end of the merge
+    --summary             (synonym to --stat)
+    --log[=<n>]           add (at most <n>) entries from shortlog to merge commit message
+    --squash              create a single commit instead of doing a merge
+    --commit              perform a commit if the merge succeeds (default)
+    -e, --edit            edit message before committing
+    --cleanup <mode>      how to strip spaces and #comments from message
+    --ff                  allow fast-forward (default)
+    --ff-only             abort if fast-forward is not possible
+    --rerere-autoupdate   update the index with reused conflict resolution if possible
+    --verify-signatures   verify that the named commit has a valid GPG signature
+    -s, --strategy <strategy>
+                          merge strategy to use
+    -X, --strategy-option <option=value>
+                          option for selected merge strategy
+    -m, --message <message>
+                          merge commit message (for a non-fast-forward merge)
+    -F, --file <path>     read message from file
+    --into-name <name>    use <name> instead of the real target
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --abort               abort the current in-progress merge
+    --quit                --abort but leave index and working tree alone
+    --continue            continue the current in-progress merge
+    --allow-unrelated-histories
+                          allow merging unrelated histories
+    --progress            force progress reporting
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+    --autostash           automatically stash/stash pop before and after
+    --overwrite-ignore    update ignored files (default)
+    --signoff             add a Signed-off-by trailer
+    --no-verify           bypass pre-merge-commit and commit-msg hooks
+
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master|MERGING)
+$ git merge --abort
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master)
+$ git checkout branch2
+Switched to branch 'branch2'
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (branch2)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master)
+$ git merge branch2
+Auto-merging shopping_list.txt
+CONFLICT (content): Merge conflict in shopping_list.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master|MERGING)
+$ git merge --abort
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master)
+$ git checkout branch2
+Switched to branch 'branch2'
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (branch2)
+$ git add shopping_list.txt
+
+Everything up-to-dateMINGW64 ~/Desktop/SI_2022_lab1_121083 (branch2)
+$ git push origin branch2
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (branch2)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master)
+$ git merge branch2
+Auto-merging shopping_list.txt
+CONFLICT (content): Merge conflict in shopping_list.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master|MERGING)
+$ git merge --abort
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master)
+$ nano shopping_list.txt
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master)
+$ nano shopping_list.txt
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master)
+$ git add shopping_list.txt
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master)
+$ git checkout branch2
+error: Your local changes to the following files would be overwritten by checkout:
+        shopping_list.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master)
+$ git merge --abort
+fatal: There is no merge to abort (MERGE_HEAD missing).
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master)
+$ git add --abort
+error: unknown option `abort'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    --renormalize         renormalize EOL of tracked files (implies -u)
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --sparse              allow updating entries outside of the sparse-checkout cone
+    --chmod (+|-)x        override the executable bit of the listed files
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master)
+$ git checkout branch2
+error: Your local changes to the following files would be overwritten by checkout:
+        shopping_list.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master)
+$ git stash
+Saved working directory and index state WIP on master: 6978c8b Merge branch1 to my master branch
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master)
+$ git checkout branch2
+Switched to branch 'branch2'
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (branch2)
+$ nano shopping_list.txt
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (branch2)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master)
+$ git merge branch2
+Auto-merging shopping_list.txt
+CONFLICT (content): Merge conflict in shopping_list.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master|MERGING)
+$ git branch
+  branch1
+  branch2
+* master
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master|MERGING)
+$ git merge --abort
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master)
+$ git branch
+  branch1
+  branch2
+* master
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master)
+$ git branch -r
+  origin/HEAD -> origin/master
+  origin/branch1
+  origin/branch2
+  origin/master
+
+Nace@DESKTOP-OOARNJL MINGW64 ~/Desktop/SI_2022_lab1_121083 (master)
+$ git branch -a
+  branch1
+  branch2
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/branch1
+  remotes/origin/branch2
+  remotes/origin/master
+
