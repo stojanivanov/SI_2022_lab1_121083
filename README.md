@@ -1,1 +1,1 @@
-# SI_2022_lab1_121083
+# Stojan Ivanov 121083
