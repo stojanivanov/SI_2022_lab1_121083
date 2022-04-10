@@ -1,5 +1,5 @@
 apple x2
-milk x2
+milk x5
 bread x2
 orange x2
 eggs x2
