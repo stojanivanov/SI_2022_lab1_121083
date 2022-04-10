@@ -3,3 +3,4 @@ milk x2
 bread x2
 orange1 x2
 eggs x2
+mouse x2
